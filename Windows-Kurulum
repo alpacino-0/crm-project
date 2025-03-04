@@ -1,0 +1,77 @@
+# Node.js resmi web sitesinden indirmeniz gerekiyor
+# PowerShell veya CMD ile indirme durumunu kontrol edebilirsiniz
+node -v
+npm -v
+
+# Git'in kurulu olup olmadığını kontrol edin
+git --version
+
+# Git kurulu değilse, resmi siteden indirip kurmanız gerekiyor
+# Kurulumdan sonra, Git'i yapılandırın
+git config --global user.name "Adınız Soyadınız"
+git config --global user.email "email@adresiniz.com"
+
+# MongoDB Community Server'ı indirip kurmanız gerekiyor
+# Kurulumdan sonra, MongoDB Compass'ı kullanabilirsiniz
+# PowerShell ile MongoDB servisinin çalıştığını kontrol edin
+Get-Service -Name MongoDB
+
+# Visual Studio Code'u resmi siteden indirmeniz gerekiyor
+# Kurulumdan sonra, gerekli eklentileri yükleyin
+# Önerilen eklentiler:
+# - ESLint
+# - Prettier
+# - JavaScript (ES6) code snippets
+# - MongoDB for VS Code
+
+# Proje dizini oluşturun
+mkdir CRM-Projesi
+cd CRM-Projesi
+
+# Backend ve frontend için ayrı klasörler oluşturun
+mkdir backend
+mkdir frontend
+
+# Backend dizinine geçin ve Node.js projesini başlatın
+cd backend
+npm init -y
+
+# Temel bağımlılıkları yükleyin
+npm install express mongoose bcrypt jsonwebtoken cors dotenv helmet morgan
+
+# Geliştirme bağımlılıklarını yükleyin
+npm install --save-dev nodemon jest supertest
+
+# Backend klasör yapısını oluşturun
+mkdir src
+cd src
+mkdir config
+mkdir controllers
+mkdir middleware
+mkdir models
+mkdir routes
+mkdir services
+mkdir utils
+cd .. 
+
+# Proje ana dizinine geri dönün
+cd ..
+
+# Git repo'su başlatın
+git init
+
+# .gitignore dosyası oluşturun
+echo "node_modules/" > .gitignore
+echo ".env" >> .gitignore
+echo "*.log" >> .gitignore
+echo ".DS_Store" >> .gitignore
+
+# İlk commit'i yapın
+git add .
+git commit -m "İlk commit: Proje yapısı oluşturuldu" 
+
+# Backend dizinine .env dosyası oluşturun
+echo "PORT=5000" > .env
+echo "MONGODB_URI=mongodb://localhost:27017/crm_db" >> .env
+echo "JWT_SECRET=gizli_anahtar_buraya_yazin" >> .env
+echo "NODE_ENV=development" >> .env 
