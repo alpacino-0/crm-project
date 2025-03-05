@@ -54,24 +54,4 @@ mkdir services
 mkdir utils
 cd .. 
 
-# Proje ana dizinine geri dönün
-cd ..
-
-# Git repo'su başlatın
-git init
-
-# .gitignore dosyası oluşturun
-echo "node_modules/" > .gitignore
-echo ".env" >> .gitignore
-echo "*.log" >> .gitignore
-echo ".DS_Store" >> .gitignore
-
-# İlk commit'i yapın
-git add .
-git commit -m "İlk commit: Proje yapısı oluşturuldu" 
-
-# Backend dizinine .env dosyası oluşturun
-echo "PORT=5000" > .env
-echo "MONGODB_URI=mongodb://localhost:27017/crm_db" >> .env
-echo "JWT_SECRET=gizli_anahtar_buraya_yazin" >> .env
-echo "NODE_ENV=development" >> .env 
+# package

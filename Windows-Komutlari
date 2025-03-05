@@ -1,0 +1,90 @@
+# Node.js resmi web sitesinden indirmeniz gerekiyor
+# PowerShell veya CMD ile indirme durumunu kontrol edebilirsiniz
+node -v
+npm -v
+
+# Git'in kurulu olup olmadığını kontrol edin
+git --version
+
+# Git kurulu değilse, resmi siteden indirip kurmanız gerekiyor
+# Kurulumdan sonra, Git'i yapılandırın
+git config --global user.name "Adınız Soyadınız"
+git config --global user.email "email@adresiniz.com"
+
+# MongoDB Community Server'ı indirip kurmanız gerekiyor
+# Kurulumdan sonra, MongoDB Compass'ı kullanabilirsiniz
+# PowerShell ile MongoDB servisinin çalıştığını kontrol edin
+Get-Service -Name MongoDB
+
+# Visual Studio Code'u resmi siteden indirmeniz gerekiyor
+# Kurulumdan sonra, gerekli eklentileri yükleyin
+# Önerilen eklentiler:
+# - ESLint
+# - Prettier
+# - JavaScript (ES6) code snippets
+# - MongoDB for VS Code
+
+# Proje dizini oluşturun
+mkdir CRM-Projesi
+cd CRM-Projesi
+
+# Backend ve frontend için ayrı klasörler oluşturun
+mkdir backend
+mkdir frontend
+
+# Backend dizinine geçin ve Node.js projesini başlatın
+cd backend
+npm init -y
+
+# Temel bağımlılıkları yükleyin
+npm install express mongoose bcrypt jsonwebtoken cors dotenv helmet morgan
+
+# Geliştirme bağımlılıklarını yükleyin
+npm install --save-dev nodemon jest supertest
+
+# Backend klasör yapısını oluşturun
+mkdir src
+cd src
+mkdir config
+mkdir controllers
+mkdir middleware
+mkdir models
+mkdir routes
+mkdir services
+mkdir utils
+cd .. 
+
+# package
+
+# 1. Müşteri modülü için gerekli dosyaları oluşturalım
+cd backend\src
+
+# Müşteri modeli oluştur
+type nul > models\customer.model.js
+echo const mongoose = require('mongoose'); > models\customer.model.js
+echo. >> models\customer.model.js
+echo // Müşteri şeması oluşturuluyor >> models\customer.model.js
+
+# Müşteri kontrolcüsü oluştur
+type nul > controllers\customer.controller.js
+echo // Müşteri kontrolcüsü oluşturuluyor > controllers\customer.controller.js
+
+# Müşteri rotaları oluştur
+type nul > routes\customer.routes.js
+echo const express = require('express'); > routes\customer.routes.js
+echo const router = express.Router(); > routes\customer.routes.js
+echo const customerController = require('../controllers/customer.controller'); > routes\customer.routes.js
+echo. >> routes\customer.routes.js
+echo // Müşteri rotaları tanımlanıyor >> routes\customer.routes.js
+
+# Müşteri servisi oluştur
+type nul > services\customer.service.js
+echo // Müşteri servisi oluşturuluyor > services\customer.service.js
+
+# 2. Yeni bir git dalı oluştur
+cd ..\..
+git checkout -b feature/customer-management
+
+# 3. Uygulamayı başlat
+cd backend
+npm run dev 

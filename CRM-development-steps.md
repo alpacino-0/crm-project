@@ -1,71 +1,71 @@
-# CRM Projesi Adım Adım Geliştirme Planı
+﻿# CRM Projesi Adım Adım Geliştirme Planı
 
 Bu doküman, CRM (Müşteri İlişkileri Yönetimi) projemizin geliştirme sürecinde izlenecek adımları, sprint planlamasını ve kilometre taşlarını detaylandırmaktadır. Geliştirme ekibi, bu dokümandaki adımları takip ederek projeyi sistematik bir şekilde ilerletebilir.
 
 ## 1. Proje Hazırlık ve Planlama (1. Hafta)
 
 ### 1.1 Geliştirme Ortamının Kurulumu
-- [ ] Node.js, npm ve gerekli araçların kurulumu
-- [ ] Git repository oluşturma ve ekip üyelerinin erişimini sağlama
-- [ ] Geliştirme, test ve canlı ortam yapılandırmalarını belirleme
-- [ ] MongoDB veritabanı kurulumu (yerel geliştirme için)
-- [ ] Proje klasör yapısını oluşturma (backend ve frontend)
+- [x] Node.js, npm ve gerekli araçların kurulumu
+- [x] Git repository oluşturma ve ekip üyelerinin erişimini sağlama
+- [x] Geliştirme, test ve canlı ortam yapılandırmalarını belirleme
+- [x] MongoDB veritabanı kurulumu (yerel geliştirme için)
+- [x] Proje klasör yapısını oluşturma (backend ve frontend)
 
 ### 1.2 Proje Yönetimi Kurulumu
-- [ ] Jira/Trello/GitHub Projects üzerinde proje yönetim alanı oluşturma
-- [ ] User story'leri ve görevleri tanımlama
-- [ ] Sprint planlaması ve zaman çizelgesi oluşturma
-- [ ] Ekip iletişim kanallarını kurma (Slack, Discord vb.)
+- [x] GitHub Projects üzerinde proje yönetim alanı oluşturma
+- [x] User story'leri ve görevleri tanımlama
+- [x] Sprint planlaması ve zaman çizelgesi oluşturma
+- [x] Ekip iletişim kanallarını kurma (Slack, Discord vb.)
 
 ### 1.3 Teknik Detaylar ve Standartlar
-- [ ] Kod yazım standartlarını belirleme (ESLint, Prettier)
-- [ ] Git branch stratejisini oluşturma (Git Flow, GitHub Flow)
-- [ ] Code review sürecini tanımlama
-- [ ] Derleme ve deploy süreçlerini planlama
+- [x] Kod yazım standartlarını belirleme (ESLint, Prettier)
+- [x] Git branch stratejisini oluşturma (Git Flow, GitHub Flow)
+- [x] Code review sürecini tanımlama
+- [x] Derleme ve deploy süreçlerini planlama
 
 ## 2. Backend Geliştirme (2-4. Haftalar)
 
 ### 2.1 Temel Altyapının Kurulumu (2. Hafta)
-- [ ] Express.js uygulaması oluşturma
-- [ ] Temel klasör yapısını kurma
-- [ ] Middleware'leri yapılandırma (cors, helmet, morgan, error handling)
-- [ ] MongoDB bağlantısını kurma (Mongoose)
-- [ ] JWT kimlik doğrulama altyapısını oluşturma
-- [ ] Temel hata işleme mekanizmasını oluşturma
+- [x] Express.js uygulaması oluşturma
+- [x] Temel klasör yapısını kurma
+- [x] Middleware'leri yapılandırma (cors, helmet, morgan, error handling)
+- [x] MongoDB bağlantısını kurma (Mongoose)
+- [x] JWT kimlik doğrulama altyapısını oluşturma
+- [x] Temel hata işleme mekanizmasını oluşturma
 
 ### 2.2 Kullanıcı Yönetimi (2. Hafta)
 - [x] User modeli oluşturma
 - [x] Kayıt API'si geliştirme
 - [x] Giriş API'si geliştirme
 - [x] Profil bilgilerini getirme API'si
-- [ ] Şifre sıfırlama API'si geliştirme
-- [ ] Profil bilgilerini getirme ve güncelleme API'leri
-- [ ] Kullanıcı rollerini ve izinlerini yönetme
-- [ ] Kullanıcı endpoints'lerinin birim testlerini yazma
+- [x] Şifre sıfırlama API'si geliştirme
+- [x] Profil bilgilerini getirme ve güncelleme API'leri
+- [x] Kullanıcı rollerini ve izinlerini yönetme
+- [x] Kullanıcı endpoints'lerinin birim testlerini yazma
 
 ### 2.3 Müşteri Yönetimi (3. Hafta)
-- [ ] Customer modelini oluşturma
-- [ ] Müşteri CRUD API'lerini geliştirme
-- [ ] Müşteri filtreleme ve arama API'lerini geliştirme
-- [ ] Müşteri etkileşim geçmişi modelini oluşturma
-- [ ] Etkileşim CRUD API'lerini geliştirme
-- [ ] Müşteri ve etkileşim endpoints'lerinin birim testlerini yazma
+- [x] Customer modelini oluşturma
+- [x] Müşteri CRUD API'lerini geliştirme
+- [x] Müşteri filtreleme ve arama API'lerini geliştirme
+- [x] Müşteri etkileşim geçmişi modelini oluşturma
+- [x] Etkileşim CRUD API'lerini geliştirme
+- [x] Müşteri ve etkileşim endpoints'lerinin birim testlerini yazma
 
 ### 2.4 Teklif ve Fatura Yönetimi (4. Hafta)
-- [ ] Proposal (Teklif) modelini oluşturma
-- [ ] Teklif CRUD API'lerini geliştirme
-- [ ] Invoice (Fatura) modelini oluşturma
-- [ ] Fatura CRUD API'lerini geliştirme
-- [ ] Teklif ve fatura PDF oluşturma özelliğini geliştirme
-- [ ] Teklif/fatura e-posta gönderim API'lerini geliştirme
-- [ ] Teklif ve fatura endpoints'lerinin birim testlerini yazma
+- [x] Proposal (Teklif) modelini oluşturma
+- [x] Teklif CRUD API'lerini geliştirme
+- [x] Invoice (Fatura) modelini oluşturma
+- [x] Fatura CRUD API'lerini geliştirme
+- [x] Teklif ve fatura PDF oluşturma özelliğini geliştirme
+- [x] Teklif/fatura e-posta gönderim API'lerini geliştirme
+- [x] Teklif ve fatura endpoints'lerinin birim testlerini yazma
 
 ### 2.5 Takvim ve Etkinlik Yönetimi (4. Hafta)
-- [ ] Event (Etkinlik) modelini oluşturma
-- [ ] Etkinlik CRUD API'lerini geliştirme
-- [ ] Etkinlik hatırlatıcı mekanizmasını kurma
-- [ ] Google Calendar/Outlook entegrasyonunu geliştirme
-- [ ] Etkinlik endpoints'lerinin birim testlerini yazma
+- [x] Event (Etkinlik) modelini oluşturma
+- [x] Etkinlik CRUD API'lerini geliştirme
+- [x] Etkinlik hatırlatıcı mekanizmasını kurma
+- [x] Google Calendar entegrasyonunu geliştirme
+- [x] Etkinlik endpoints'lerinin birim testlerini yazma
 
 ## 3. Frontend Geliştirme (5-8. Haftalar)
 
@@ -212,3 +212,4 @@ Bu doküman, CRM (Müşteri İlişkileri Yönetimi) projemizin geliştirme süre
 - GitHub Actions: https://docs.github.com/en/actions
 - AWS dokümantasyonu: https://docs.aws.amazon.com
 - DigitalOcean dokümantasyonu: https://docs.digitalocean.com
+
